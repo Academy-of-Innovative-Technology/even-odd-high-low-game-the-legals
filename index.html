@@ -10,10 +10,98 @@
 
   <main class="container">
 <div class="background-shapes">
-  <div class="shape shape-1"></div>
-  <div class="shape shape-2"></div>
-  <div class="shape shape-3"></div>
+  <div class="shape shape-1">🌟</div>
+  <div class="shape shape-2">🎲</div>
+  <div class="shape shape-3">🎯</div>
+  <div class="shape shape-4">🏆</div>
+  <div class="shape shape-5">🎊</div>
+  <div class="shape shape-6">💫</div>
+  </div>
+  
+<div class="container">
+
+  <header>
+    <h1>🎮 Number Guessing Game🎮</h1>
+<p class="subtitle">Can you guess the secret number between 0 and 1000?</p>
+  </header>
+
+<div class="stats-container">
+  <div class="stat-card"></div>
+    <div class="stat-icon">🏆</div>
+    <div class="stat-label">Wins</div>
+    <div class="stat-value" id="wins">0</div>
+  
+  </div>
+  
+ <div class="stat-card">
+  <div class="stat-icon">💔</div>
+  <div class="stat-label">Losses</div>
+    <div class="stat-value" id="losses">0</div>
+ </div>
+  
+<div class="stat-card">
+  <div class="stat-icon">🔄</div>
+  <div class="stat-label">Retries</div>
+    <div class="stat-value" id="retries">0</div>
+
 </div>
-  </main>
+  <div class="stat-card">
+  <div class="stat-icon">🎲</div>
+  <div class="stat-label">Rounds</div>
+    <div class="stat-value" id="rounds">0</div>
+</div>
+
+<div class="stat-card">
+  <div class="stat-icon">🔥</div>
+  <div class="stat-label">Streak</div>
+  <div class="stat-value" id="streak">0</div>
+</div>
+</div>
+
+ <div class="game-container">
+            <div class="game-info">
+                <div class="info-item">
+                    <span class="label">Guesses Made:</span>
+                    <span class="value" id="guessCount">0</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Remaining Tries:</span>
+                    <span class="value" id="remainingTries">10</span>
+                </div>
+            </div>
+
+            <div class="hint-container" id="hintContainer">
+                <div class="hint" id="hint">Enter a number to start guessing!</div>
+            </div>
+
+            <div class="input-container">
+                <input 
+                    type="number" 
+                    id="guessInput" 
+                    placeholder="Enter your guess (0-1000)" 
+                    min="0" 
+                    max="1000"
+                    autocomplete="off"
+                >
+                <button id="guessBtn" class="btn btn-primary">🎯 Guess</button>
+            </div>
+
+            <div class="button-container">
+                <button id="newGameBtn" class="btn btn-secondary">🎲 New Game</button>
+                <button id="retryBtn" class="btn btn-retry" style="display: none;">🔄 Retry Round</button>
+                <button id="quitBtn" class="btn btn-danger">❌ Quit to AOIT</button>
+            </div>
+
+            <div class="message-container" id="messageContainer"></div>
+        </div>
+
+        <div class="history-container">
+            <h3>📜 Guess History</h3>
+            <div id="guessHistory" class="guess-history"></div>
+        </div>
+
+
+
+</main>
 </body>
 </html>
